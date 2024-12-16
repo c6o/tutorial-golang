@@ -1,0 +1,11 @@
+version: '1.0'
+consume:
+  primaryNamespace: tutorial
+  rules:
+    - tutorial/*
+serve:
+  - namespace: tutorial
+    service: service-b
+    ports:
+      - local: 8080
+        remote: 8080
